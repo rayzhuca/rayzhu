@@ -1,4 +1,4 @@
-export interface ProjectProps {
+export interface Proj {
     title: string;
     summary: string;
     description: string;
@@ -7,7 +7,7 @@ export interface ProjectProps {
     images?: string[];
 }
 
-export const projects: ProjectProps[] = [
+export const projects: Proj[] = [
     {
         title: "Newton Notes",
         summary: "An AI powered app that generates Cornell notes",
@@ -30,5 +30,20 @@ export const projects: ProjectProps[] = [
             "Eggshell DB is a custom key-value database built from scratch. The database is designed to be extremely efficient both time and space wise, utilizing B+-trees. The database could also handle concurrent requests via reader-writer lock.",
         tags: ["C++"],
         github: "https://github.com/rayzhuca/eggshell-db",
+    },
+    {
+        title: "TypeCS",
+        summary: "Typing web app",
+        description:
+            "TypeCS is a personalized typing application that utilizes machine learning to help typers grow and improve their typing speed.",
+        tags: ["AWS", "Flask", "Python", "Typescript", "CSS", "HTML"],
+        github: "https://github.com/rayzhuca/typecs",
+    },
+    {
+        title: "Roblox Themes",
+        summary: "Roblox Chrome extension",
+        description:
+            "Roblox Themes allows users to customize the Roblox website. It allows users to pick custom colors, save themes, and load themes. The extension has accumulated over 327,000 installs.",
+        tags: ["Javascript", "CSS", "HTML"],
     },
 ];

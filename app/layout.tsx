@@ -1,6 +1,5 @@
 "use client";
 
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -23,6 +22,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <head>
+                <link rel="icon" href="/icon.ico" sizes="any" />
                 <title>Ray</title>
             </head>
             <body className={inter.className}>
