@@ -1,9 +1,9 @@
 "use client";
 
-import OrgCard from "@/components/OrgCard";
 import { acpc, atomaMedia, gymBuddy, includeClub } from "@/lib/orgs";
 import Link from "next/link";
 import Image from "next/image";
+import { OrgCard } from "@/components/orgcard";
 
 export default function Home() {
     return (

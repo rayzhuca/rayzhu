@@ -34,4 +34,4 @@ const OrgCard: React.FC<Org> = ({ title, description, icon, link, date }) => {
     );
 };
 
-export default OrgCard;
+export { OrgCard };

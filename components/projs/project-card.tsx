@@ -39,4 +39,4 @@ const ProjectCard: React.FC<Proj> = ({ title, summary, description, tags, github
     );
 };
 
-export default ProjectCard;
+export { ProjectCard };
