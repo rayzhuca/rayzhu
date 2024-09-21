@@ -30,9 +30,9 @@ const ReferenceItem: React.FC<ReferenceItemInterface> = ({ title, titleLink, ite
 
 export default function Page() {
     return (
-        <div className="flex flex-col justify-between min-h-screen bg-[#FBDD80]">
+        <div className="flex flex-col justify-between min-h-screen w-screen bg-[#FBDD80]">
             <Header title="" titleHref="/" />
-            <div className="flex grow px-16 py-10 pt-32 *:border-t *:border-black *:border-opacity-10 gap-28">
+            <div className="flex flex-wrap grow px-16 py-10 pt-32 *:border-t *:border-black *:border-opacity-10 gap-28">
                 <section className="flex-1 flex flex-col justify-between">
                     <div className="mt-8">
                         <p className="select-none text-xl font-mono font-extralight text-black text-opacity-30">
@@ -42,9 +42,9 @@ export default function Page() {
                         </p>
                     </div>
 
-                    <div>
+                    <div className="flex flex-col gap-1 md:gap-6">
                         <h1 className="text-3xl font-medium text-black text-opacity-60">Software Engineer</h1>
-                        <h2 className="mt-[-1rem] mb-12 text-[6rem] font-bold text-black text-opacity-80">Ray Zhu</h2>
+                        <h2 className="mb-12 text-4xl md:text-[6rem] font-bold text-black text-opacity-80">Ray Zhu</h2>
                     </div>
                 </section>
 
@@ -70,9 +70,9 @@ export default function Page() {
                     <div className="w-full border-b border-black border-opacity-10"></div>
                     <ReferenceItem
                         title="Blogs"
-                        titleLink="/blogs"
+                        titleLink="/blog"
                         items={["A Month at Ramp", "Learning Haskell"]}
-                        itemLinks={["/blogs", "/blogs"]}
+                        itemLinks={["/blog", "/blog"]}
                     />
                     <div className="w-full border-b border-black border-opacity-10"></div>
                     <ReferenceItem title="Notes" titleLink="/notes" items={["Operating Systems"]} itemLinks={["/notes"]} />
