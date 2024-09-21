@@ -20,7 +20,7 @@ const CVSection: React.FC<CVSectionInterface> = ({ title, children, wrapperClass
 
 export default function Resume() {
     return (
-        <div className="flex flex-col min-h-screen bg-[#FFE2DE] pb-24">
+        <div className="flex flex-col min-h-screen bg-[#fff] pb-24">
             <Header title="Curriculum vitae" titleHref="/cv" />
             <div className="flex flex-col gap-12 mt-24 px-20">
                 <CVSection title="Experience" wrapperClasses="flex flex-col gap-8">
