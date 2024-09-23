@@ -26,7 +26,7 @@ const BlogSection: React.FC<BlogInterface> = ({ title, slug, date, description }
     );
 };
 
-export default function Resume() {
+export default function Page() {
     return (
         <div className="flex flex-col min-h-screen bg-[#fff] pb-24">
             <Header title="Blog" titleHref="/cv" />
