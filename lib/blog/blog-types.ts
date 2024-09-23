@@ -55,11 +55,11 @@ class Section implements ContentElement, SectionInterface {
     type: "section" = "section";
     title: string;
     content: ContentElement[];
-    level?: number | undefined;
-    constructor({ title, content, level }: SectionInterface) {
+    level: number;
+    constructor({ title, content }: SectionInterface) {
         this.title = title;
         this.content = content;
-        this.level = level;
+        this.level = -1;
     }
 }
 

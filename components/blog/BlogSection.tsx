@@ -1,4 +1,5 @@
 import { ContentElement, ImageContent, List, Paragraph, Section, TextSegment } from "@/lib/blog/blog-types";
+import { sectionLevelToClass, sectionTitleLevelToClass } from "@/lib/blog/blogs";
 
 import Image from "next/image";
 
@@ -32,10 +33,10 @@ const ListComponent: React.FC<List> = ({ content }) => {
     );
 };
 
-const SectionComponent: React.FC<Section> = ({ title, content }) => {
+const SectionComponent: React.FC<Section> = ({ title, content, level }) => {
     return (
-        <section>
-            <h1 className="text-xl font-bold font-lora text-black text-opacity-80">{title}</h1>
+        <section className={`${sectionLevelToClass.get(level)}`}>
+            <h1 className={`${sectionTitleLevelToClass.get(level)} font-lora text-black text-opacity-80`}>{title}</h1>
             {content.map((v, i) => (
                 <ContentElementComponent key={i} {...v} />
             ))}
