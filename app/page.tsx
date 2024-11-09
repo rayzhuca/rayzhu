@@ -1,82 +1,47 @@
-import { Header } from "@/components/header";
-import Link from "next/link";
-
-interface ReferenceItemInterface {
-    title: string;
-    titleLink: string;
-    items: string[];
-    itemLinks: string[];
-    parentClasses?: string;
-}
-
-const ReferenceItem: React.FC<ReferenceItemInterface> = ({ title, titleLink, items, itemLinks, parentClasses = "" }) => {
-    return (
-        <div className={"flex justify-between " + parentClasses}>
-            <div>
-                <Link href={titleLink} className="text-lg text-black text-opacity-30">
-                    {title}
-                </Link>
-            </div>
-            <div className="flex flex-col gap-2 text-xl *:text-right *:font-medium font-lora *:text-black *:text-opacity-70">
-                {items.map((item, i) => (
-                    <Link key={item} href={itemLinks[i]}>
-                        {item}
-                    </Link>
-                ))}
-            </div>
-        </div>
-    );
-};
+import Image from "next/image";
 
 export default function Page() {
     return (
-        <div className="flex flex-col justify-between min-h-screen w-screen bg-[#FBDD80]">
-            <Header title="" titleHref="/" />
-            <div className="flex flex-wrap grow px-16 py-10 pt-32 *:border-t *:border-black *:border-opacity-10 gap-28">
-                <section className="flex-1 flex flex-col justify-between">
-                    <div className="mt-8">
-                        <p className="select-none text-xl font-mono font-extralight text-black text-opacity-30">
-                            life :: Journey
-                            <br />
-                            life = (growing, exploring)
-                        </p>
+        <div className="flex flex-col items-center w-full">
+            <div className="flex flex-col gap-2 w-2/3">
+                <div className="flex justify-between">
+                    <div className="flex flex-col mt-12">
+                        <h1 className="text-2xl font-medium">ray zhu</h1>
+                        <p className="text-gray-200">junior at uc davis, mathematics and computer science</p>
                     </div>
+                    <div className="w-32 h-32 relative mt-12">
+                        <Image src="/imgs/miku.jpg" fill={true} alt="miku" />
+                    </div>
+                </div>
 
-                    <div className="flex flex-col gap-1 md:gap-6">
-                        <h1 className="text-3xl font-medium text-black text-opacity-60">Software Engineer</h1>
-                        <h2 className="mb-12 text-4xl md:text-[6rem] font-bold text-black text-opacity-80">Ray Zhu</h2>
-                    </div>
-                </section>
+                <div className="w-full h-64"></div>
 
-                <section className="flex-1 flex flex-col gap-8">
-                    <div className="flex flex-col gap-2">
-                        <Link href="/cv" className="text-black text-opacity-30 mt-8">
-                            Curriculum vitae
-                        </Link>
-                        <ReferenceItem
-                            title="Experience"
-                            titleLink="/cv"
-                            items={["Ramp", "Atoma Media", "GymBuddy"]}
-                            itemLinks={["/cv", "/cv", "/cv"]}
-                        />
-                        <ReferenceItem
-                            title="Education"
-                            titleLink="/cv"
-                            items={["University of California, Davis"]}
-                            itemLinks={["/cv"]}
-                            parentClasses="mt-8"
-                        />
+                <div className="flex flex-col">
+                    <h2 className="text-lg font-medium">favorite classes</h2>
+                    <div className="flex flex-col gap-1 text-gray-200">
+                        <p>ecs 170 -- artifical intelligence</p>
+                        <p>mat 135b -- stochastic processes</p>
+                        <p>phy 9c -- eletricity and magnetism</p>
                     </div>
-                    <div className="w-full border-b border-black border-opacity-10"></div>
-                    <ReferenceItem
-                        title="Blogs"
-                        titleLink="/blog"
-                        items={["A Month at Ramp", "Learning Haskell"]}
-                        itemLinks={["/blog", "/blog"]}
-                    />
-                    <div className="w-full border-b border-black border-opacity-10"></div>
-                    <ReferenceItem title="Notes" titleLink="/notes" items={["Operating Systems"]} itemLinks={["/notes"]} />
-                </section>
+                </div>
+
+                <div className="flex flex-col mt-4">
+                    <h2 className="text-lg font-medium">book shelf</h2>
+                    <div className="flex flex-col gap-1 text-gray-200">
+                        <div className="flex justify-between">
+                            <p>designing data intensive applications</p>
+                            <div>27 / 544</div>
+                        </div>
+                        <div className="flex justify-between">
+                            <p>operating systems: three easy pieces</p>
+                            <div>0 / 686</div>
+                        </div>
+                        <div className="flex justify-between">
+                            <p>introduction to algorithms</p>
+                            <div>0 / 1136</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
