@@ -9,7 +9,7 @@ export default function Page() {
                     <div className="flex flex-col mt-12">
                         <h1 className="text-2xl font-medium">ray zhu</h1>
                         <p className="text-gray-200">junior at uc davis, computer science and mathematics</p>
-                        <p>i want to learn as much as possible so ai wont replace me</p>
+                        <p className="text-gray-400">my goal is to learn as much as possible</p>
                     </div>
                     <div className="w-32 h-32 relative mt-12">
                         <Image src={miku} alt="miku" />
