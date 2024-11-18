@@ -31,7 +31,7 @@ export default function Page() {
                     <h2 className="text-lg font-medium">reading progress</h2>
                     <div className="grid grid-cols-[2fr,1fr] gap-1 text-gray-200 mt-1">
                         <p className="w-auto">designing data intensive applications</p>
-                        <div className="text-right">27 / 544</div>
+                        <div className="text-right">40 / 544</div>
                         <p className="w-auto">operating systems: three easy pieces</p>
                         <div className="text-right">0 / 686</div>
                         <p className="w-auto">introduction to algorithms</p>
