@@ -61,7 +61,7 @@ export default function Page() {
             </p>
 
             <p>
-                Type classes represent another cornerstone of Haskell's design, offering an elegant approach to polymorphism. They are
+                Type classes represent another cornerstone of Haskell&apos;s design, offering an elegant approach to polymorphism. They are
                 similar to abstract classes in traditional object-orientated languages.
             </p>
             <div className="flex justify-center w-full">
@@ -109,9 +109,9 @@ export default function Page() {
             </div>
 
             <p>
-                Perhaps Haskell's most distinctive feature is its lazy evaluation. The code above defines the Fibonacci sequence. Notice
-                that `fibs` uses itself in the definition. This is only possible because of lazy evaluation. Second, the list is infinite.
-                Computation is only done on `fibs` when something forces evaluation, like indexing.
+                Perhaps Haskell&apos;s most distinctive feature is its lazy evaluation. The code above defines the Fibonacci sequence.
+                Notice that `fibs` uses itself in the definition. This is only possible because of lazy evaluation. Second, the list is
+                infinite. Computation is only done on `fibs` when something forces evaluation, like indexing.
             </p>
 
             <h2 className="mt-8">Practicality</h2>
