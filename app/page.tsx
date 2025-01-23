@@ -22,6 +22,7 @@ export default function Page() {
                 <div className="flex flex-col">
                     <h2 className="text-lg font-medium">Notes</h2>
                     <div className="flex flex-col gap-1 text-gray-200 mt-1">
+                        <Link href="/notes/ddia-book-review">Is Designing Data Intensive Applications Worth Reading?</Link>
                         <Link href="/notes/what-i-learned-from-haskell">What I learned from Haskell</Link>
                     </div>
                 </div>
@@ -39,7 +40,7 @@ export default function Page() {
                     <h2 className="text-lg font-medium">Reading progress</h2>
                     <div className="grid grid-cols-[2fr,1fr] gap-1 text-gray-200 mt-1">
                         <p className="w-auto">Designing Data Intensive Applications</p>
-                        <div className="text-right">439 / 544</div>
+                        <div className="text-right">544 / 544</div>
                         <p className="w-auto">Operating Systems: Three Easy Pieces</p>
                         <div className="text-right">0 / 686</div>
                         <p className="w-auto">Introduction to Algorithms</p>
