@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 interface NoteProps {
-    title: string;
+    title: ReactNode;
     date: string;
     children: React.ReactNode;
 }

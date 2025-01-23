@@ -22,7 +22,9 @@ export default function Page() {
                 <div className="flex flex-col">
                     <h2 className="text-lg font-medium">Notes</h2>
                     <div className="flex flex-col gap-1 text-gray-200 mt-1">
-                        <Link href="/notes/ddia-book-review">Is Designing Data Intensive Applications Worth Reading?</Link>
+                        <Link href="/notes/is-ddia-worth-reading">
+                            Is <em>Designing Data-Intensive Applications</em> Worth Reading?
+                        </Link>
                         <Link href="/notes/what-i-learned-from-haskell">What I learned from Haskell</Link>
                     </div>
                 </div>

@@ -6,8 +6,8 @@ export default function Page() {
     return (
         <Note title="What I learned from Haskell" date={"December 21, 2024"}>
             <p>
-                In the past month, I have been learning and writing in Haskell. My journey in Haskell began back in my junior year of
-                highschool in 2020. Recently, I decided to pick it up again, and I want to reflect on the core concepts that I learned.
+                In the past month, I have been learning and writing in Haskell. My journey in Haskell began back in my junior year of high
+                school in 2020. Recently, I decided to pick it up again, and I want to reflect on the core concepts that I learned.
             </p>
             <p>
                 Note that this article glosses over important functional programming concepts or syntax. Instead, I chose to focus on the
