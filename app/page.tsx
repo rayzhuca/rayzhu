@@ -40,10 +40,7 @@ export default function Page() {
 
                 <div className="h-20"></div>
 
-                <div
-                    className="relative border border-gray-100 [&_img]:border [&_img]:border-gray-300"
-                    style={{ width: "100%", height: "300px" }}
-                >
+                <div className="relative border border-gray-100 " style={{ width: "100%", height: "300px" }}>
                     {/* Background image */}
                     <div className="absolute inset-0" style={{ zIndex: -10 }}>
                         <Image src={racing} alt="racing background" className="w-full h-full object-cover opacity-40" fill />
