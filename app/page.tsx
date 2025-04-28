@@ -18,17 +18,19 @@ export default function Page() {
         <div className="flex flex-col items-center w-full">
             <div className="flex flex-col gap-2 w-4/5 sm:w-1/2">
                 <div className="flex justify-between">
-                    <div className="flex flex-col mt-12">
+                    <div className="flex flex-col mt-12 mr-4">
                         <h1 className="text-2xl font-medium">Ray Zhu</h1>
                         <p className="text-gray-200">Junior at UC Davis, computer science and mathematics</p>
-                        <p className="text-gray-400">How’d you get here?</p>
+                        <p className="text-gray-400">
+                            <em>“Man ought to know that in the theater of human life, it is only for Gods and angels to be spectators.”</em>
+                        </p>
                     </div>
                     <div className="w-32 h-32 relative mt-12">
                         <Image src={miku} alt="miku" />
                     </div>
                 </div>
 
-                <div className="flex flex-col">
+                <div className="flex flex-col mt-2">
                     <h2 className="text-lg font-medium">Notes</h2>
                     <div className="flex flex-col gap-1 text-gray-200 mt-1">
                         <Link href="/notes/is-ddia-worth-reading">
@@ -38,9 +40,9 @@ export default function Page() {
                     </div>
                 </div>
 
-                <div className="h-20"></div>
+                <div className="h-14"></div>
 
-                <div className="relative border border-gray-100 " style={{ width: "100%", height: "300px" }}>
+                <div className="relative" style={{ width: "100%", height: "300px" }}>
                     {/* Background image */}
                     <div className="absolute inset-0" style={{ zIndex: -10 }}>
                         <Image src={racing} alt="racing background" className="w-full h-full object-cover opacity-40" fill />
