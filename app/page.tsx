@@ -164,7 +164,7 @@ export default function Page() {
                 </div> */}
 
                 <div className="mt-4 mb-8">
-                    <h2 className="text-lg font-medium">Book Shelf</h2>
+                    <h2 className="text-lg font-medium">Bookshelf</h2>
                     <div className="grid grid-cols-[2fr,1fr] gap-1 text-gray-200 mt-1">
                         <p className="w-auto">An Introduction to Manifolds</p>
                         <div className="text-right">14 / 316</div>
