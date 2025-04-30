@@ -30,17 +30,30 @@ export default function Page() {
                     </div>
                 </div>
 
-                <div className="flex flex-col mt-2">
-                    <h2 className="text-lg font-medium">Notes</h2>
-                    <div className="flex flex-col gap-1 text-gray-200 mt-1">
-                        <Link href="/notes/is-ddia-worth-reading">
-                            Is <em>Designing Data-Intensive Applications</em> Worth Reading?
+                <div className="flex flex-col mt-1">
+                    <div className="text-right">
+                        My art blog (¬◡¬)✧ ✐ᝰ ↣{" "}
+                        <Link href="/art-blog" className="underline">
+                            art-blog
                         </Link>
-                        <Link href="/notes/what-i-learned-from-haskell">What I learned from Haskell</Link>
                     </div>
                 </div>
 
-                <div className="h-14"></div>
+                <div className="flex flex-col mt-1">
+                    <h2 className="text-lg font-medium">Jottings</h2>
+                    <div className="flex flex-col gap-1 text-gray-200 mt-1">
+                        <div>
+                            <Link href="/notes/is-ddia-worth-reading">
+                                Is <em>Designing Data-Intensive Applications</em> Worth Reading?
+                            </Link>
+                        </div>
+                        <div>
+                            <Link href="/notes/what-i-learned-from-haskell">What I learned from Haskell</Link>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="h-12"></div>
 
                 <div className="relative" style={{ width: "100%", height: "300px" }}>
                     {/* Background image */}
