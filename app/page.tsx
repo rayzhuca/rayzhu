@@ -10,7 +10,7 @@ import mikasa from "@/public/imgs/mikasa.jpg";
 import racing from "@/public/imgs/racing.jpg";
 import somedayfree from "@/public/imgs/somedayfree.jpg";
 import argo from "@/public/imgs/argo.jpg";
-import noise from "@/public/imgs/noise.avif";
+import ltg from "@/public/imgs/ltg.gif";
 import Link from "next/link";
 
 export default function Page() {
@@ -64,6 +64,11 @@ export default function Page() {
                     {/* Mazda - large image in top left */}
                     <div className="absolute" style={{ left: 0, top: -10, width: "50%", height: "200px", zIndex: 20 }}>
                         <Image src={mazda} alt="mazda" className="w-full h-full object-contain" fill />
+                    </div>
+
+                    {/* LTG - top right */}
+                    <div className="absolute" style={{ left: "45%", top: 100, width: "20%", height: "100px", zIndex: 50 }}>
+                        <Image src={ltg} alt="v" className="w-full h-full object-contain" fill />
                     </div>
 
                     {/* Argo - top right */}
