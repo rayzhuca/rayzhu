@@ -121,9 +121,9 @@ function Gallery() {
             </div>
 
             {/* LTG - top right */}
-            <div className="absolute" style={{ left: "45%", top: 100, width: "20%", height: "100px", zIndex: 50 }}>
+            {/* <div className="absolute" style={{ left: "45%", top: 100, width: "20%", height: "100px", zIndex: 50 }}>
                 <Image src={ltg} alt="v" className="w-full h-full object-contain" fill />
-            </div>
+            </div> */}
 
             {/* Argo - top right */}
             <div className="absolute" style={{ left: "50%", top: -20, width: "50%", height: "150px", zIndex: 30 }}>
