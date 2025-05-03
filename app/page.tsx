@@ -1,7 +1,6 @@
 import Image from "next/image";
 import miku from "@/public/imgs/miku.jpg";
 import mazda from "@/public/imgs/mazda.jpg";
-import copyright from "@/public/imgs/copyright.gif";
 import manifold from "@/public/imgs/manifold.gif";
 import bully from "@/public/imgs/bully.png";
 import loringtu from "@/public/imgs/loringtu.jpg";
