@@ -55,107 +55,7 @@ export default function Page() {
 
                 <div className="h-12"></div>
 
-                <div className="relative" style={{ width: "100%", height: "300px" }}>
-                    {/* Background image */}
-                    <div className="absolute inset-0" style={{ zIndex: -10 }}>
-                        <Image src={racing} alt="racing background" className="w-full h-full object-cover opacity-40" fill />
-                    </div>
-
-                    {/* Mazda - large image in top left */}
-                    <div className="absolute" style={{ left: 0, top: -10, width: "50%", height: "200px", zIndex: 20 }}>
-                        <Image src={mazda} alt="mazda" className="w-full h-full object-contain" fill />
-                    </div>
-
-                    {/* LTG - top right */}
-                    <div className="absolute" style={{ left: "45%", top: 100, width: "20%", height: "100px", zIndex: 50 }}>
-                        <Image src={ltg} alt="v" className="w-full h-full object-contain" fill />
-                    </div>
-
-                    {/* Argo - top right */}
-                    <div className="absolute" style={{ left: "50%", top: -20, width: "50%", height: "150px", zIndex: 30 }}>
-                        <Image src={argo} alt="argo" className="w-full h-full object-contain" fill />
-                    </div>
-
-                    {/* Manifold - top far right */}
-                    <div
-                        className="absolute"
-                        style={{ left: "80%", top: 30, width: "25%", height: "130px", zIndex: 40, marginLeft: "-24px" }}
-                    >
-                        <Image src={manifold} alt="manifold" className="w-full h-full object-contain" fill />
-                    </div>
-
-                    {/* Bully - middle far right */}
-                    <div
-                        className="absolute"
-                        style={{
-                            left: "65%",
-                            top: "160px",
-                            width: "25%",
-                            height: "200px",
-                            zIndex: 20,
-                            marginLeft: "-40px",
-                            marginTop: "-32px",
-                        }}
-                    >
-                        <Image src={bully} alt="bully" className="w-full h-full object-contain" fill />
-                    </div>
-
-                    {/* Loring Tu - bottom left */}
-                    <div
-                        className="absolute"
-                        style={{ left: -20, top: "220px", width: "25%", height: "160px", zIndex: 30, marginTop: "-32px" }}
-                    >
-                        <Image src={loringtu} alt="loring tu" className="w-full h-full object-contain" fill />
-                    </div>
-
-                    {/* Someday Free - bottom left-center */}
-                    <div
-                        className="absolute"
-                        style={{
-                            left: "35%",
-                            top: "200px",
-                            width: "25%",
-                            height: "160px",
-                            zIndex: 30,
-                            marginLeft: "-24px",
-                            marginTop: "-32px",
-                        }}
-                    >
-                        <Image src={somedayfree} alt="someday free" className="w-full h-full object-contain" fill />
-                    </div>
-
-                    {/* Street - bottom right-center */}
-                    <div
-                        className="absolute"
-                        style={{
-                            left: "35%",
-                            top: "40px",
-                            width: "35%",
-                            height: "300px",
-                            zIndex: 10,
-                            marginLeft: "-40px",
-                            marginTop: "-32px",
-                        }}
-                    >
-                        <Image src={street} alt="street" className="w-full h-full object-contain" fill />
-                    </div>
-
-                    {/* Mikasa - bottom far right */}
-                    <div
-                        className="absolute"
-                        style={{
-                            left: "75%",
-                            top: "200px",
-                            width: "25%",
-                            height: "100px",
-                            zIndex: 40,
-                            marginLeft: "-24px",
-                            marginTop: "16px",
-                        }}
-                    >
-                        <Image src={mikasa} alt="mikasa" className="w-full h-full object-contain" fill />
-                    </div>
-                </div>
+                <Gallery />
 
                 <div className="h-12"></div>
 
@@ -166,6 +66,30 @@ export default function Page() {
                         <p>MAT 135B -- stochastic processes</p>
                         <p>PHY 9C -- eletricity and magnetism</p>
                     </div>
+                </div> */}
+
+                {/* <div className="mt-2">
+                    <h2 className="text-lg font-medium mb-1">Facts About Me</h2>
+
+                    <ul className="list-disc mt-1 *:mb-1">
+                        <li>
+                            <em>I like to listen to</em>{" "}
+                            <Link className="underline" target="_blank" href="https://open.spotify.com/track/5mOKXtTlX20JWVla2Kx9D7">
+                                Kanye
+                            </Link>
+                            , jazz (Nujabes),{" "}
+                            <Link className="underline" target="_blank" href="https://open.spotify.com/track/6Leg4EGkFTZoeLfkXZHLvy">
+                                rock
+                            </Link>
+                            , chill R&B
+                        </li>
+                        <li>
+                            <em>In my free time,</em> I enjoy reading, drawing, doom-scrolling, gyming, playing tennis
+                        </li>
+                        <li>
+                            <em>My favorite movies are</em> Minecraft Movie, Joker, American Psycho
+                        </li>
+                    </ul>
                 </div> */}
 
                 <div className="mt-4 mb-8">
@@ -179,6 +103,106 @@ export default function Page() {
                         <div className="text-right">544 / 544</div>
                     </div>
                 </div>
+            </div>
+        </div>
+    );
+}
+
+function Gallery() {
+    return (
+        <div className="relative" style={{ width: "100%", height: "300px" }}>
+            {/* Background image */}
+            <div className="absolute inset-0" style={{ zIndex: -10 }}>
+                <Image src={racing} alt="racing background" className="w-full h-full object-cover opacity-40" fill />
+            </div>
+
+            {/* Mazda - large image in top left */}
+            <div className="absolute" style={{ left: 0, top: -10, width: "50%", height: "200px", zIndex: 20 }}>
+                <Image src={mazda} alt="mazda" className="w-full h-full object-contain" fill />
+            </div>
+
+            {/* LTG - top right */}
+            <div className="absolute" style={{ left: "45%", top: 100, width: "20%", height: "100px", zIndex: 50 }}>
+                <Image src={ltg} alt="v" className="w-full h-full object-contain" fill />
+            </div>
+
+            {/* Argo - top right */}
+            <div className="absolute" style={{ left: "50%", top: -20, width: "50%", height: "150px", zIndex: 30 }}>
+                <Image src={argo} alt="argo" className="w-full h-full object-contain" fill />
+            </div>
+
+            {/* Manifold - top far right */}
+            <div className="absolute" style={{ left: "80%", top: 30, width: "25%", height: "130px", zIndex: 40, marginLeft: "-24px" }}>
+                <Image src={manifold} alt="manifold" className="w-full h-full object-contain" fill />
+            </div>
+
+            {/* Bully - middle far right */}
+            <div
+                className="absolute"
+                style={{
+                    left: "65%",
+                    top: "160px",
+                    width: "25%",
+                    height: "200px",
+                    zIndex: 20,
+                    marginLeft: "-40px",
+                    marginTop: "-32px",
+                }}
+            >
+                <Image src={bully} alt="bully" className="w-full h-full object-contain" fill />
+            </div>
+
+            {/* Loring Tu - bottom left */}
+            <div className="absolute" style={{ left: -20, top: "220px", width: "25%", height: "160px", zIndex: 30, marginTop: "-32px" }}>
+                <Image src={loringtu} alt="loring tu" className="w-full h-full object-contain" fill />
+            </div>
+
+            {/* Someday Free - bottom left-center */}
+            <div
+                className="absolute"
+                style={{
+                    left: "35%",
+                    top: "200px",
+                    width: "25%",
+                    height: "160px",
+                    zIndex: 30,
+                    marginLeft: "-24px",
+                    marginTop: "-32px",
+                }}
+            >
+                <Image src={somedayfree} alt="someday free" className="w-full h-full object-contain" fill />
+            </div>
+
+            {/* Street - bottom right-center */}
+            <div
+                className="absolute"
+                style={{
+                    left: "35%",
+                    top: "40px",
+                    width: "35%",
+                    height: "300px",
+                    zIndex: 10,
+                    marginLeft: "-40px",
+                    marginTop: "-32px",
+                }}
+            >
+                <Image src={street} alt="street" className="w-full h-full object-contain" fill />
+            </div>
+
+            {/* Mikasa - bottom far right */}
+            <div
+                className="absolute"
+                style={{
+                    left: "75%",
+                    top: "200px",
+                    width: "25%",
+                    height: "100px",
+                    zIndex: 40,
+                    marginLeft: "-24px",
+                    marginTop: "16px",
+                }}
+            >
+                <Image src={mikasa} alt="mikasa" className="w-full h-full object-contain" fill />
             </div>
         </div>
     );
