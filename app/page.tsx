@@ -37,6 +37,12 @@ export default function Page() {
                     </div>
                 </div>
 
+                <div className="flex">
+                    <div className="w-20 h-20 bg-pink-50"></div>
+                    <div className="w-20 h-20 bg-pink-100"></div>
+                    <div className="w-20 h-20 bg-pink-200"></div>
+                </div>
+
                 <div className="flex flex-col mt-1">
                     <h2 className="text-lg font-medium">Jottings</h2>
                     <div className="flex flex-col gap-1 text-gray-200 mt-1">
