@@ -9,7 +9,6 @@ import mikasa from "@/public/imgs/mikasa.jpg";
 import racing from "@/public/imgs/racing.jpg";
 import somedayfree from "@/public/imgs/somedayfree.jpg";
 import argo from "@/public/imgs/argo.jpg";
-import ltg from "@/public/imgs/ltg.gif";
 import Link from "next/link";
 
 export default function Page() {
@@ -95,7 +94,7 @@ export default function Page() {
                     <h2 className="text-lg font-medium">Bookshelf</h2>
                     <div className="grid grid-cols-[2fr,1fr] gap-1 text-gray-200 mt-1">
                         <p className="w-auto">An Introduction to Manifolds</p>
-                        <div className="text-right">14 / 316</div>
+                        <div className="text-right">48 / 316</div>
                         <p className="w-auto">The Story of Philosophy</p>
                         <div className="text-right">122 / 578</div>
                         <p className="w-auto">Designing Data Intensive Applications</p>
@@ -114,6 +113,10 @@ function Gallery() {
             <div className="absolute inset-0" style={{ zIndex: -10 }}>
                 <Image src={racing} alt="racing background" className="w-full h-full object-cover opacity-40" fill />
             </div>
+
+            {/* <div className="absolute" style={{ left: "20%", top: 200, width: "20%", height: "90px", zIndex: 50 }}>
+                <Image src={youngray} alt="young ray" className="w-full h-full object-contain" fill />
+            </div> */}
 
             {/* Mazda - large image in top left */}
             <div className="absolute" style={{ left: 0, top: -10, width: "50%", height: "200px", zIndex: 20 }}>
