@@ -12,6 +12,12 @@ import argo from "@/public/imgs/argo.jpg";
 import Link from "next/link";
 
 export default function Page() {
+    const quotes = [
+        "“Man ought to know that in the theater of human life, it is only for Gods and angels to be spectators.”",
+        "A great leader should only ever ask themselves two questions: “Do I want to do this?” and “Would this look cool?”!",
+    ];
+    const randomQuoteIndex = 1;
+
     return (
         <div className="flex flex-col items-center w-full">
             <div className="flex flex-col gap-2 w-4/5 sm:w-1/2">
@@ -20,7 +26,7 @@ export default function Page() {
                         <h1 className="text-2xl font-medium">Ray Zhu</h1>
                         <p className="text-gray-200">Junior at UC Davis, computer science and mathematics</p>
                         <p className="text-gray-400">
-                            <em>“Man ought to know that in the theater of human life, it is only for Gods and angels to be spectators.”</em>
+                            <em>{quotes[randomQuoteIndex]}</em>
                         </p>
                     </div>
                     <div className="w-32 h-32 relative mt-12">
