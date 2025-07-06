@@ -5,7 +5,7 @@ import manifold from "@/public/imgs/manifold.gif";
 import bully from "@/public/imgs/bully.png";
 import loringtu from "@/public/imgs/loringtu.jpg";
 import street from "@/public/imgs/street.jpg";
-import mikasa from "@/public/imgs/mikasa.jpg";
+import chud from "@/public/imgs/chud.jpg";
 import racing from "@/public/imgs/racing.jpg";
 import somedayfree from "@/public/imgs/somedayfree.jpg";
 import argo from "@/public/imgs/argo.jpg";
@@ -24,7 +24,7 @@ export default function Page() {
                 <div className="flex justify-between">
                     <div className="flex flex-col mt-12 mr-4">
                         <h1 className="text-2xl font-medium">Ray Zhu</h1>
-                        <p className="text-gray-200">Junior at UC Davis, computer science and mathematics</p>
+                        <p className="text-gray-200">20 — Gamer — Artist — Single Father — UCD </p>
                         <p className="text-gray-400">
                             <em>{quotes[randomQuoteIndex]}</em>
                         </p>
@@ -34,19 +34,12 @@ export default function Page() {
                     </div>
                 </div>
 
-                <div className="flex flex-col mt-1">
-                    <div className="text-right">
-                        My art blog (¬◡¬)✧ ✐ᝰ ↣{" "}
+                <div className="flex flex-col mb-1">
+                    <div className="flex gap-4">
                         <Link href="/art-blog" className="underline">
                             art-blog
                         </Link>
                     </div>
-                </div>
-
-                <div className="flex">
-                    <div className="w-20 h-20 bg-pink-50"></div>
-                    <div className="w-20 h-20 bg-pink-100"></div>
-                    <div className="w-20 h-20 bg-pink-200"></div>
                 </div>
 
                 <div className="flex flex-col mt-1">
@@ -154,7 +147,7 @@ function Gallery() {
             <div
                 className="absolute"
                 style={{
-                    left: "65%",
+                    left: "60%",
                     top: "160px",
                     width: "25%",
                     height: "200px",
@@ -175,7 +168,7 @@ function Gallery() {
             <div
                 className="absolute"
                 style={{
-                    left: "35%",
+                    left: "30%",
                     top: "200px",
                     width: "25%",
                     height: "160px",
@@ -216,7 +209,7 @@ function Gallery() {
                     marginTop: "16px",
                 }}
             >
-                <Image src={mikasa} alt="mikasa" className="w-full h-full object-contain" fill />
+                <Image src={chud} alt="chud" className="w-full h-full object-contain" fill />
             </div>
         </div>
     );
