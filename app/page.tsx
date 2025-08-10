@@ -36,8 +36,8 @@ export default function Page() {
 
                 <div className="flex flex-col mb-1">
                     <div className="flex gap-4">
-                        <Link href="/art-blog" className="underline">
-                            art-blog
+                        <Link href="/art" className="underline">
+                            art
                         </Link>
                     </div>
                 </div>
