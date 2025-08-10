@@ -10,15 +10,14 @@ interface ArtworkProps {
 
 export const Artwork: React.FC<ArtworkProps> = ({ title, date, description, src }) => {
     return (
-        <div className="flex flex-row w-full">
-            <div className="md:w-40 pr-4 md:flex-shrink-0">
-                <div>{description}</div>
+        <div className="flex flex-col w-1/2">
+            <div className="">
+                <Image src={src} className="" alt={title} />
+            </div>
+            <div className="flex justify-between">
+                <span>{description}</span>
                 <em>{date}</em>
             </div>
-            <div className="flex-grow">
-                <Image src={src} className="w-full" alt={title} />
-            </div>
-            <div className="md:w-40 md:pl-4 flex-shrink-0"></div>
         </div>
     );
 };
