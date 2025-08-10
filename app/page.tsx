@@ -1,11 +1,11 @@
 import Image from "next/image";
 import miku from "@/public/imgs/miku.jpg";
 import mazda from "@/public/imgs/mazda.jpg";
-import manifold from "@/public/imgs/manifold.gif";
+import chudrotating from "@/public/imgs/chudrotating.gif";
 import bully from "@/public/imgs/bully.png";
 import loringtu from "@/public/imgs/loringtu.jpg";
 import street from "@/public/imgs/street.jpg";
-import chud from "@/public/imgs/chud.jpg";
+import sleeping from "@/public/imgs/sleeping.jpg";
 import racing from "@/public/imgs/racing.jpg";
 import somedayfree from "@/public/imgs/somedayfree.jpg";
 import argo from "@/public/imgs/argo.jpg";
@@ -134,20 +134,30 @@ function Gallery() {
             </div> */}
 
             {/* Argo - top right */}
-            <div className="absolute" style={{ left: "50%", top: -20, width: "50%", height: "150px", zIndex: 30 }}>
+            <div className="absolute" style={{ left: "40%", top: -20, width: "50%", height: "150px", zIndex: 30 }}>
                 <Image src={argo} alt="argo" className="w-full h-full object-contain" fill />
             </div>
 
-            {/* Manifold - top far right */}
-            <div className="absolute" style={{ left: "80%", top: 30, width: "25%", height: "130px", zIndex: 40, marginLeft: "-24px" }}>
-                <Image src={manifold} alt="manifold" className="w-full h-full object-contain" fill />
+            {/* Chud rotating - top far right */}
+            <div
+                className="absolute"
+                style={{
+                    left: "80%",
+                    top: 30,
+                    width: "25%",
+                    height: "130px",
+                    zIndex: 40,
+                    marginLeft: "-24px",
+                }}
+            >
+                <Image src={chudrotating} alt="chud rotating" className="w-full h-full object-contain" fill />
             </div>
 
             {/* Bully - middle far right */}
             <div
                 className="absolute"
                 style={{
-                    left: "60%",
+                    left: "58%",
                     top: "160px",
                     width: "25%",
                     height: "200px",
@@ -160,7 +170,7 @@ function Gallery() {
             </div>
 
             {/* Loring Tu - bottom left */}
-            <div className="absolute" style={{ left: -20, top: "220px", width: "25%", height: "160px", zIndex: 30, marginTop: "-32px" }}>
+            <div className="absolute" style={{ left: -10, top: "190px", width: "25%", height: "160px", zIndex: 30, marginTop: "-32px" }}>
                 <Image src={loringtu} alt="loring tu" className="w-full h-full object-contain" fill />
             </div>
 
@@ -196,12 +206,12 @@ function Gallery() {
                 <Image src={street} alt="street" className="w-full h-full object-contain" fill />
             </div>
 
-            {/* Mikasa - bottom far right */}
+            {/* Sleeping - bottom far right */}
             <div
                 className="absolute"
                 style={{
                     left: "75%",
-                    top: "200px",
+                    top: "180px",
                     width: "25%",
                     height: "100px",
                     zIndex: 40,
@@ -209,7 +219,7 @@ function Gallery() {
                     marginTop: "16px",
                 }}
             >
-                <Image src={chud} alt="chud" className="w-full h-full object-contain" fill />
+                <Image src={sleeping} alt="sleeping" className="w-full h-full object-contain" fill />
             </div>
         </div>
     );
