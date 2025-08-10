@@ -62,39 +62,6 @@ export default function Page() {
 
                 <div className="h-12"></div>
 
-                {/* <div className="flex flex-col mt-4">
-                    <h2 className="text-lg font-medium">Favorite classes</h2>
-                    <div className="flex flex-col gap-1 text-gray-200 mt-1">
-                        <p>ECS 170 -- artifical intelligence</p>
-                        <p>MAT 135B -- stochastic processes</p>
-                        <p>PHY 9C -- eletricity and magnetism</p>
-                    </div>
-                </div> */}
-
-                {/* <div className="mt-2">
-                    <h2 className="text-lg font-medium mb-1">Facts About Me</h2>
-
-                    <ul className="list-disc mt-1 *:mb-1">
-                        <li>
-                            <em>I like to listen to</em>{" "}
-                            <Link className="underline" target="_blank" href="https://open.spotify.com/track/5mOKXtTlX20JWVla2Kx9D7">
-                                Kanye
-                            </Link>
-                            , jazz (Nujabes),{" "}
-                            <Link className="underline" target="_blank" href="https://open.spotify.com/track/6Leg4EGkFTZoeLfkXZHLvy">
-                                rock
-                            </Link>
-                            , chill R&B
-                        </li>
-                        <li>
-                            <em>In my free time,</em> I enjoy reading, drawing, doom-scrolling, gyming, playing tennis
-                        </li>
-                        <li>
-                            <em>My favorite movies are</em> Minecraft Movie, Joker, American Psycho
-                        </li>
-                    </ul>
-                </div> */}
-
                 <div className="mt-4 mb-8">
                     <h2 className="text-lg font-medium">Bookshelf</h2>
                     <div className="grid grid-cols-[2fr,1fr] gap-1 text-gray-200 mt-1">
@@ -119,19 +86,10 @@ function Gallery() {
                 <Image src={racing} alt="racing background" className="w-full h-full object-cover opacity-40" fill />
             </div>
 
-            {/* <div className="absolute" style={{ left: "20%", top: 200, width: "20%", height: "90px", zIndex: 50 }}>
-                <Image src={youngray} alt="young ray" className="w-full h-full object-contain" fill />
-            </div> */}
-
             {/* Mazda - large image in top left */}
             <div className="absolute" style={{ left: 0, top: -10, width: "50%", height: "200px", zIndex: 20 }}>
                 <Image src={mazda} alt="mazda" className="w-full h-full object-contain" fill />
             </div>
-
-            {/* LTG - top right */}
-            {/* <div className="absolute" style={{ left: "45%", top: 100, width: "20%", height: "100px", zIndex: 50 }}>
-                <Image src={ltg} alt="v" className="w-full h-full object-contain" fill />
-            </div> */}
 
             {/* Argo - top right */}
             <div className="absolute" style={{ left: "40%", top: -20, width: "50%", height: "150px", zIndex: 30 }}>
