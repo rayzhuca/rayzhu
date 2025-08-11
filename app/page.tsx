@@ -24,7 +24,9 @@ export default function Page() {
                 <div className="flex justify-between">
                     <div className="flex flex-col mt-12 mr-4">
                         <h1 className="text-2xl font-medium">Ray Zhu</h1>
-                        <p className="text-gray-200">20 — Gamer — Artist — Single Father — UCD </p>
+                        <p className="text-gray-200">
+                            20 — Gamer — <Link href="/art">Artist</Link> — Single Father — UCD{" "}
+                        </p>
                         <p className="text-gray-400">
                             <em>{quotes[randomQuoteIndex]}</em>
                         </p>
@@ -34,16 +36,16 @@ export default function Page() {
                     </div>
                 </div>
 
-                <div className="flex flex-col mb-1">
+                {/* <div className="flex flex-col mb-1">
                     <div className="flex gap-4">
                         <Link href="/art" className="underline">
                             art
                         </Link>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="flex flex-col mt-1">
-                    <h2 className="text-lg font-medium">Jottings</h2>
+                    <h2 className="text-lg font-medium">Notes</h2>
                     <div className="flex flex-col gap-1 text-gray-200 mt-1">
                         <div>
                             <Link href="/notes/is-ddia-worth-reading">
