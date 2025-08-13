@@ -36,16 +36,8 @@ export default function Page() {
                     </div>
                 </div>
 
-                {/* <div className="flex flex-col mb-1">
-                    <div className="flex gap-4">
-                        <Link href="/art" className="underline">
-                            art
-                        </Link>
-                    </div>
-                </div> */}
-
                 <div className="flex flex-col mt-1">
-                    <h2 className="text-lg font-medium">Notes</h2>
+                    <h2 className="text-lg font-medium">Rambles</h2>
                     <div className="flex flex-col gap-1 text-gray-200 mt-1">
                         <div>
                             <Link href="/notes/is-ddia-worth-reading">
