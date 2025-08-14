@@ -25,7 +25,7 @@ export default function Page() {
                     <div className="flex flex-col mt-12 mr-4">
                         <h1 className="text-2xl font-medium">Ray Zhu</h1>
                         <p className="text-gray-200">
-                            20 — Gamer — <Link href="/art">Artist</Link> — Single Father — UCD{" "}
+                            20 — Gamer — <Link href="/art">Artist</Link> — Programmer — UCD{" "}
                         </p>
                         <p className="text-gray-400">
                             <em>{quotes[randomQuoteIndex]}</em>
@@ -86,7 +86,7 @@ function Gallery() {
             </div>
 
             {/* Argo - top right */}
-            <div className="absolute" style={{ left: "40%", top: -20, width: "50%", height: "150px", zIndex: 30 }}>
+            <div className="absolute" style={{ left: "40%", top: -20, width: "50%", height: "220px", zIndex: 30 }}>
                 <Image src={argo} alt="argo" className="w-full h-full object-contain" fill />
             </div>
 
