@@ -3,7 +3,7 @@ import miku from "@/public/imgs/miku.jpg";
 import mazda from "@/public/imgs/mazda.jpg";
 import chudrotating from "@/public/imgs/chudrotating.gif";
 import bully from "@/public/imgs/bully.png";
-import loringtu from "@/public/imgs/loringtu.jpg";
+import mangalnalg from "@/public/imgs/mangalnalg.jpg";
 import street from "@/public/imgs/street.jpg";
 import sleeping from "@/public/imgs/sleeping.jpg";
 import racing from "@/public/imgs/racing.jpg";
@@ -121,9 +121,9 @@ function Gallery() {
                 <Image src={bully} alt="bully" className="w-full h-full object-contain" fill />
             </div>
 
-            {/* Loring Tu - bottom left */}
-            <div className="absolute" style={{ left: -10, top: "190px", width: "25%", height: "160px", zIndex: 30, marginTop: "-32px" }}>
-                <Image src={loringtu} alt="loring tu" className="w-full h-full object-contain" fill />
+            {/* Manga Linear Algebra - bottom left */}
+            <div className="absolute" style={{ left: 10, top: "190px", width: "25%", height: "160px", zIndex: 30, marginTop: "-32px" }}>
+                <Image src={mangalnalg} alt="manga linear algebra" className="w-full h-full object-contain" fill />
             </div>
 
             {/* Someday Free - bottom left-center */}
